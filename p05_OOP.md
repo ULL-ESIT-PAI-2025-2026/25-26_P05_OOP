@@ -1,5 +1,5 @@
 # Práctica 5. Programación Orientada a Objetos en TypeScript. Tests Unitarios con Jest.
-### Factor de ponderación: 6
+### Factor de ponderación: 6X
 
 ### Objetivos
 Los objetivos de esta práctica son:
