@@ -1,5 +1,5 @@
 # Práctica 5. Programación Orientada a Objetos en TypeScript. Tests Unitarios con Jest.
-### Factor de ponderación: 6X
+### Factor de ponderación: 6
 
 ### Objetivos
 Los objetivos de esta práctica son:
@@ -74,7 +74,7 @@ programa TypeScript.
 
 Para cada uno de los problemas, desarrolle antes de realizar el programa, tests unitarios en 
 [Jest](https://jestjs.io/)
-para probar la corrección de sus soluciones, una vez que desarrolle las mismas con posterioridad.
+para probar la corrección de sus soluciones.
 Aparte de los tests públicos de Jutge, incluya al menos un test test adicional para comprobar situaciones que
 considere relevantes.
 Si su solución se basa en varias funciones, desarrolle tests para cada una de ellas.
@@ -144,16 +144,16 @@ de JavaScript.
 La clase ha de contener al menos métodos (y/o atributos) que implementen las siguientes operaciones con conjuntos:
 * `toString` Devuelve una cadena que representa el conjunto. Los conjuntos se imprimirán en pantalla con sus
   elementos incluídos entre llaves, de modo que el conjunto vacío se representa por `{}`.
+* `add` Añade un elemento a un conjunto
+* `has` Determina si un elemento pertenece al conjunto
 * `size` Devuelve el cardinal del conjunto
 * `union` Unión de conjuntos
 * `intersection` Intersección de conjuntos
 * `difference` Complemento relativo
-* `belongsTo` Determina si un elemento pertenece al conjunto
 * `isEmpty` Determina sin un conjunto es vacío
-* `isSubset` Determina si un conjunto es subconjunto de otro 
-* `areDisjoint` Indica si dos conjuntos son disjuntos
-* `areEqual` Indica si dos conjuntos son iguales 
-* `insert` Añade un elemento a un conjunto
+* `isSubsetOf` Determina si un conjunto es subconjunto de otro 
+* `isDisjointFrom` Indica si dos conjuntos son disjuntos
+* `isEqual` Indica si dos conjuntos son iguales 
 
 Para la definición de estas operaciones consulte 
 [Wikipedia](https://en.wikipedia.org/wiki/Set_(mathematics)) 
@@ -167,7 +167,7 @@ Incluya discrecionalmente cualesquiera otras operaciones que considere adecuadas
 Desarrolle un programa cliente `sets.ts` que permita operar con conjuntos y haga uso de la clase `MySet` que diseñe.
 El programa cliente realizará operaciones similares a las que figuran en la página MDN correspondiente a la
 clase
-[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) 
+[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#using_the_set_object)
 de JavaScript, por ejemplo:
 ```javascript
 const mySet1 = new MySet()
@@ -194,6 +194,9 @@ Si el bit i-ésimo está a 1 ello indicará que el número *i* pertenece al conj
 Si ese bit está a 0, ello indica que el número *i* no pertenece al conjunto. 
 De este modo se puede representar conjuntos con tantos números naturales como bits tiene la representación
 binaria del número.
+
+Para la representación de conjuntos se aconseja utilizar exclusivamente valores numéricos y las operaciones
+aritméticas adecuadas. Evite en la medida de lo posible representar sus conjuntos mediante cadenas (`string`).
 
 ### Ejercicios de Exercism
 Resuelva los siguientes problemas ejecutando los tests correspondientes a cada uno de ellos hasta conseguir
