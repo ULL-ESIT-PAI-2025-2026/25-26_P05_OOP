@@ -201,7 +201,7 @@ aritméticas adecuadas. Evite en la medida de lo posible representar sus conjunt
 ### Ejercicios de Exercism
 Resuelva los siguientes problemas ejecutando los tests correspondientes a cada uno de ellos hasta conseguir
 que todos pasen correctamente. 
-Una vez que lo logre, suba su solución a Exercism.
+Una vez que lo logre, suba su solución a Exercism utilizando para ello una Terminal.
 
 3.- [Robot Name](https://exercism.org/tracks/typescript/exercises/robot-name)
 
